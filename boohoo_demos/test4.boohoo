@@ -1,0 +1,26 @@
+# Copy 2x input to cell (1,0,0)
+HOO                     # in
+boo bOOO                # up:1 (0,0,1) +2
+Booo bOO                # front:2 (0,2,1) +1
+Hooo                    # back:2 (0,0,1)
+bOo                     # while current cell (0,0,1) > 0 {
+	oob                 #   down:1 (0,0,0)
+	bOo                 #   while current cell (0,0,0) > 0 {
+		hoo	bOO         #       right:1 (1,0,0) +1
+		ooh HOo         #       left:1 (0,0,0) -1
+		Boo bOO         #       front:1 (0,1,0) +1
+		Hoo             #       back:1 (0,0,0)
+	HoO                 #   }
+	boo HOo             #   up:1 (0,0,1) -1
+	Booo                #   front:2 (0,2,1)
+	bOo                 #   while current cell (0,2,1) > 0 {
+		oob Hoo         #       down:1 (0,2,0) back:1 (0,1,0)
+        bOo             #       while current cell (0,1,0) > 0 {
+            Hoo bOO     #           back:1 (0,0,0) +1
+            Boo HOo     #           front:1 (0,1,0) -1
+        HoO             #       }
+        Boo boo HOo     #       front:1 (0,2,0) up:1 (0,2,1) -1
+	HoO                 #   }
+	Hooo                #   back:2 (0,0,1)
+HoO                     # }
+oob hoo BOO             # down:1 (0,0,0) right:1 (1,0,0) out

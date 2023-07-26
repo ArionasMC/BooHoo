@@ -1,0 +1,10 @@
+# Another complex way of copying 2x input to (1,1,0)
+HOO BOO             # in out
+bOo                 # while current cell (0,0,0) > 0 {
+	hoo  bOOO       #   right:1 (1,0,0) +2
+	bOo             #   while current cell (1,0,0) > 0 {
+		Boo bOO BOO #       front:1 (1,1,0) +1 out
+		Hoo HOo     #       back:1 (1,0,0) -1
+	HoO             #   }
+	ooh HOo         #   left:1 (0,0,0) -1
+HoO		            # }

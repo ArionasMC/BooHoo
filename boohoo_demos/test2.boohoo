@@ -1,0 +1,5 @@
+HOO BOO # in out
+bOo     # while current cell (0,0,0) > 0 {
+  HOo   #   -1  
+  BOO   #   out
+HoO     # }

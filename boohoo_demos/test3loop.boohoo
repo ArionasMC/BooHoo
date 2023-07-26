@@ -1,0 +1,25 @@
+HOO          
+bOo # copy input to cells (i,0,0) i = 1,2,3   
+	hoo bOO
+    hoo bOO
+    hoo bOO      
+	ooooh HOo         
+HoO # (0,0,0)   
+
+hoo
+bOo # (1,0,0)
+    hoo
+    pos
+    bOo # (2,0,0)
+        hoo 
+        bOo # (3,0,0)
+            ooooh bOO #pos
+            hoooo HOo #pos
+        HoO # kanei to running True opote pernaei mia fora sto line 20 to HoO
+        ooh HOo
+    HoO
+    ooh HOo
+
+HoO
+
+ooh BOO
